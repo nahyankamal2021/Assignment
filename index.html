@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Calculator</title>
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- css style  -->
+    <link rel="stylesheet" href="css/balance.css">
+
+</head>
+
+<body>
+    <main class="container mt-5 mx-auto">
+        <h3 class="text-center text-primary">Balance Chacking💰</h3>
+        <section class="row mt-5">
+            <div class="col-lg-6 col-sm-12 mt-2">
+                <img class="img-fluid w-100" src="./img/Money_Calculator.jpg" alt="">
+            </div>
+
+            <!-- Form Started -->
+
+            <div class="ps-5 col-lg-6 col-sm-12 bg-light">
+                <h3 class="text-center me-5 mt-sm-4 mt-lg-0 mb-4">Income</h3>
+
+
+                <div class="d-flex">
+                    <h4 class="text-center me-4">Income:</h4>
+                    <input id="total-income"
+                        class="ms-4 text-center d-inline-block w-50 bg-secondary border-0 text-white rounded  mb-4"
+                        type="text" name="" id="" value="10000">
+                </div>
+                <h3 class="text-center me-5 mt-sm-4 mt-lg-0 mt-4 mb-4">Expenses</h3>
+                <div class="d-flex">
+                    <h4 class="text-center me-5">Food:</h4>
+                    <input id="food"
+                        class="ms-4 text-center d-inline-block w-50 bg-secondary border-0 text-white mb-4 rounded"
+                        type="text" name="" id="" value="3000">
+
+                </div>
+                <p id="food-error" class="text-danger fs-4">Please enter a valid-input(positive number and less than
+                    income) for food item</p>
+                <div class="d-flex">
+                    <h4 class="text-center me-5 pe-2">Rent:</h4>
+                    <input id="rent"
+                        class="ms-4 text-center d-inline-block w-50 bg-secondary border-0 text-white mb-4 rounded"
+                        type="text" name="" id="" value="2000">
+                </div>
+                <p id="rent-error" class="text-danger fs-4">Please enter a valid-input(positive number and less than
+                    income) for rent</p>
+                <div class="d-flex">
+                    <h4 class="text-center me-4">Clothes:</h4>
+                    <input id="clothes"
+                        class="ms-4 text-center d-inline-block w-50 bg-secondary border-0 text-white mb-4 rounded w-50"
+                        type="text" name="" id="" value="500">
+                </div>
+                <p id="clothes-error" class="text-danger fs-4">Please enter a valid-input(positive number and less than
+                    income) for clothes</p>
+
+                <!-- Form End -->
+
+
+                <button style="margin-left: 220px; " id="calculation"
+                    class="mb-4 bg-primary border-0 rounded text-white px-4 py-2 fw-bold">Calculate</button>
+
+                <!-- Balance Part Started -->
+
+                <h3 class="text-center me-5">Total Expenses: <span id="total-expenses">5500</span></h3>
+                <p id="total-expenses-error" class="text-danger fs-4">You Expense is bigger than your income</p>
+                <h3 class="text-center me-4 mb-5">Balance: <span id="balance">4500</span></h3>
+
+                <!-- Balance Part End -->
+
+
+
+                <div class="d-flex">
+                    <h4>Save: </h4>
+                    <input id="saving-percentage"
+                        class="ms-5 text-center d-inline-block w-25 bg-secondary border-0 text-white mb-4 rounded"
+                        type="text" name="" id="" value="20">
+                    <p class="ms-4 me-2 fs-2 "> % </p>
+                    <button id="save" class="bg-primary ms-4 border-0 rounded text-white px-5 fs-4 h-50">Save</button>
+                </div>
+                <h3 class="text-center me-4">Saving Amount: <span id="saving-amount">0</span></h3>
+                <p id="saving-amount-error" class="text-danger fs-4">You don't have sufficient balance</p>
+                <h3 class="text-center me-4">Remaining Balance: <span id="remaining-balance">2500</span></h3>
+            </div>
+        </section>
+    </main>
+    <!-- js script  -->
+    <script src="./js folder/money.js"></script>
+
+    <!-- bootstrap script  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

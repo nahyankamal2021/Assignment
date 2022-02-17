@@ -1,0 +1,24 @@
+/* error for food  */
+#food-error{
+    display: none;
+}
+
+/* error for rent  */
+#rent-error{
+    display: none;
+}
+
+/* error for clothes  */
+#clothes-error{
+    display: none;
+}
+
+/* error for expenses  */
+#total-expenses-error{
+    display: none;
+}
+
+/* error for saving amount  */
+#saving-amount-error{
+    display: none;
+}
